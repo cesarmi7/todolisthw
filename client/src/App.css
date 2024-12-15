@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #ffe4e9, #ffdde1, #f9f0ff);
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  background-color: #fff;
+  width: 90%;
+  max-width: 450px;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+  font-size: 2rem;
+  color: #ff8ba7;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.task-input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.task-input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ffb6c1;
+  font-size: 1rem;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff8ba7;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #ff6386;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid #ffb6c1;
+  border-radius: 8px;
+  margin: 5px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-text {
+  flex: 1; 
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+  white-space: normal; 
+  max-width: 90%; 
+}
+
+.task-buttons button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  color: #ff8ba7;
+}
+
+.delete-btn:hover {
+  color: #ff4d4d;
+}
+
+.api-endpoints {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.api-endpoints h2 {
+  font-size: 1.2rem;
+  color: #ff6386;
+  margin-bottom: 10px;
+}
+
+.api-btn {
+  background-color:#ff8ba7;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.api-btn:hover {
+  background-color: #ff6386;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
